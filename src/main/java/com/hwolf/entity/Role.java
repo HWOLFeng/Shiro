@@ -3,9 +3,9 @@ package com.hwolf.entity;
 import java.io.Serializable;
 
 /**
- * <p>User: Zhang Kaitao
- * <p>Date: 14-1-28
- * <p>Version: 1.0
+ * @author HWOLF
+ * @version create in：17-10-24 下午3:30
+ * @descrption
  */
 public class Role implements Serializable {
     private Long id;
