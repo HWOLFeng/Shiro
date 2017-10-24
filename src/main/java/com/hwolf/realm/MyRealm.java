@@ -1,4 +1,4 @@
-package day01.realm;
+package com.hwolf.realm;
 
 import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.Realm;

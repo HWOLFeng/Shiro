@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 缓存管理器 使用Ehcache实现 -->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+    <bean id="retryLimitHashedCredentialsMatcher" class="com.hwolf.util.credential.RetryLimitHashedCredentialsMatcher">
+        <constructor-arg ref="cacheManager"/>
+        <!--配置加密方式-->
+        <property name="hashAlgorithmName" value="md5"/>
+        <!--散列迭代次数-->
+        <property name="hashIterations" value="2"/>
+        <!--storedCredentialsHexEnc表示是否存储散列后的密码为16进制，需要和生成密码时的一样。-->
+        <property name="storedCredentialsHexEncoded" value="true"/>
+    </bean>
+    <bean id="userRealm" class="com.hwolf.realm.UserRealm">
+
+    </bean>
+</beans>

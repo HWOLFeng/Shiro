@@ -1,4 +1,4 @@
-package day01;
+package com.hwolf.realm;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -17,7 +17,7 @@ import org.junit.Test;
  * @descrption
  */
 public class LoginLogoutTest {
-    @Test
+//    @Test
     public void testLoginLogoutTest() {
         //1、获取SecurityManager工厂，此处使用Ini配置文件初始化SecurityManager
         Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-realm.ini");
