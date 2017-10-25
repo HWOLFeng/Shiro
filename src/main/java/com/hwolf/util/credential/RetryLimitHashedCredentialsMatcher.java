@@ -28,6 +28,7 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
         //retry count+1
         AtomicInteger retryCount = passwordRetryCache.get(username);
         if (retryCount==null){
+//            新建计数
             retryCount = new AtomicInteger(0);
             passwordRetryCache.put(username,retryCount);
         }
