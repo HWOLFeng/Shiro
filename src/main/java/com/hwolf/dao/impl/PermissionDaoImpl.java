@@ -1,7 +1,7 @@
 package com.hwolf.dao.impl;
 
 import com.hwolf.dao.PermissionDao;
-import com.hwolf.entity.Permission;
+import com.hwolf.entity.Permissions;
 
 /**
  * @author HWOLF
@@ -10,7 +10,7 @@ import com.hwolf.entity.Permission;
  */
 public class PermissionDaoImpl implements PermissionDao {
     @Override
-    public Permission createPermission(Permission permission) {
+    public Permissions createPermission(Permissions permission) {
         return null;
     }
 

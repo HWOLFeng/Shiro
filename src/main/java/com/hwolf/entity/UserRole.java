@@ -1,15 +1,8 @@
 package com.hwolf.entity;
 
-import java.io.Serializable;
-
-/**
- * @author HWOLF
- * @version create in：17-10-24 下午3:30
- * @descrption
- */
-public class UserRole implements Serializable {
-
+public class UserRole {
     private Long userId;
+
     private Long roleId;
 
     public Long getUserId() {
@@ -27,7 +20,6 @@ public class UserRole implements Serializable {
     public void setRoleId(Long roleId) {
         this.roleId = roleId;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

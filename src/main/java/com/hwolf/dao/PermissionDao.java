@@ -1,7 +1,6 @@
 package com.hwolf.dao;
 
-import com.hwolf.entity.Permission;
-import com.hwolf.entity.Role;
+import com.hwolf.entity.Permissions;
 
 /**
  * @author HWOLF
@@ -9,7 +8,7 @@ import com.hwolf.entity.Role;
  * @descrption
  */
 public interface PermissionDao {
-    Permission createPermission(Permission permission);
+    Permissions createPermission(Permissions permission);
 
     public void deletePermission(Long permissionId);
 }
